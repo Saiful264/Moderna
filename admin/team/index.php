@@ -5,7 +5,7 @@
     $query = "SELECT * FROM team";
   
     $result = mysqli_query($conn, $query);// connect to the data dase query
-  
+
     if(mysqli_num_rows($result)>0){
         $datas = mysqli_fetch_all($result, 1); //a function is give us assosetive array
     }
@@ -46,11 +46,10 @@
                             ?>
                             <tr>
                                 <td><?= ++$key ?></td>
-                                <td></td>
+                                <td> <img width="120" src="../../uploads/team/<?=$data['banner']?>" alt=""></td>
                                 <td><?=$data['name']?></td>
                                 <td><?=$data['post']?></td>
                                 <td><?= substr($data['description'], 0, 50).'...'?></td>
-                               
                                 <td>
                                     <a  class="btn btn-danger" href="">active/deactive</a>
                                     <a class="btn btn-success" href="">View</a>
@@ -75,3 +74,6 @@
 include_once '../templates/footer.php';
 session_unset();
 ?>
+
+
+bi bi-linkedin bi bi-instagram  bi bi-facebook  bi bi-twitter

@@ -14,7 +14,7 @@
     <section class="mt-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-14">
                     <?php 
                     if(isset($_SESSION['seccess'])){
                         ?>

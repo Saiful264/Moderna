@@ -46,10 +46,10 @@
                 
                 <img src="uploads/team/<?=$data['banner']?>" class="img-fluid" alt="">
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href=""><i class="bi <?=$data['name']?>"></i></a>
+                  <a href=""><i class="bi <?=$data['name']?>"></i></a>
+                  <a href=""><i class="bi <?=$data['name']?>"></i></a>
+                  <a href=""><i class="bi <?=$data['name']?>"></i></a>
                 </div>
               </div>
              

@@ -7,6 +7,10 @@ print_r($_POST);
     $name = trim(htmlentities($_POST['name']));
     $post = trim(htmlentities($_POST['post']));
     $description = trim(htmlentities($_POST['description']));
+    $icon_class_1 = trim(htmlentities($_POST['icon_class_1']));
+    $icon_class_2 = trim(htmlentities($_POST['icon_class_2']));
+    $icon_class_3 = trim(htmlentities($_POST['icon_class_3']));
+    $icon_class_4 = trim(htmlentities($_POST['icon_class_4']));
     $banner = $_FILES['banner'];
 
 
@@ -39,9 +43,10 @@ print_r($_POST);
 
             //print_r($upload);
 
-    
-            $query = "INSERT INTO team(name, post,  description, banner) 
-            VALUES ('$name','$post','$description','$banner_name')";
+            $query = "INSERT INTO team(name, post, description, banner, icon_class_1, icon_class_2, icon_class_3, icon_class_4)
+           VALUES ('$name','$post','$description','$banner_name','$icon_class_1','$icon_class_2','$icon_class_3','$icon_class_4')";
+            //  $query = "INSERT INTO team(name, post,  description, banner) 
+            //  VALUES ('$name','$post','$description','$banner_name')";
 
             $result = mysqli_query($conn, $query);
 
@@ -49,6 +54,7 @@ print_r($_POST);
                 $_SESSION['seccess'] = "Service upload success!";
 
                 header("Location: index.php");
+                echo "ok";
             }
     }else{
        header("Location: index.php"); 

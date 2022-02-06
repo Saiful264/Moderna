@@ -57,7 +57,49 @@
                                 ?>
                             </div>
                             
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Icon Name 1" name="icon_class_1">
+                                <?php
+                                if(isset($_SESSION['btn_linkerr'])){
+                                ?>
+                                    <p class="text-danger"><?=$_SESSION['btn_linkerr']?></p> 
+                                <?php
+                                }
+                                ?>
+                            </div>
 
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Icon Name 2" name="icon_class_2">
+                                <?php
+                                if(isset($_SESSION['btn_linkerr'])){
+                                ?>
+                                    <p class="text-danger"><?=$_SESSION['btn_linkerr']?></p> 
+                                <?php
+                                }
+                                ?>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Icon Name 3" name="icon_class_3">
+                                <?php
+                                if(isset($_SESSION['btn_linkerr'])){
+                                ?>
+                                    <p class="text-danger"><?=$_SESSION['btn_linkerr']?></p> 
+                                <?php
+                                }
+                                ?>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Icon Name 4" name="icon_class_4">
+                                <?php
+                                if(isset($_SESSION['btn_linkerr'])){
+                                ?>
+                                    <p class="text-danger"><?=$_SESSION['btn_linkerr']?></p> 
+                                <?php
+                                }
+                                ?>
+                            </div>
                             
                             <div class="form-group">
                                     <input type="file" class="form-control" name="banner">
