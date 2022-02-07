@@ -52,9 +52,9 @@
                                 <td><?= substr($data['description'], 0, 50).'...'?></td>
                                 <td>
                                     <a  class="btn btn-danger" href="">active/deactive</a>
-                                    <a class="btn btn-success" href="">View</a>
-                                    <a  class="btn btn-danger" href="">Edit</a>
-                                    <a class="btn btn-success" href="">Delete</a>
+                                    <a class="btn btn-success" href="view.php?id=<?= $data['id']?>">View</a>
+                                    <a  class="btn btn-danger" href="edit.php?id=<?=$data['id']?>">Edit</a>
+                                    <a class="btn btn-success" href="delete.php?id=<?= $data['id']?>">Delete</a>
                                 </td>
                             </tr>
                             <?php
